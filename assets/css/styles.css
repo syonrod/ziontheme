@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div.container-fluid {
+  background-image: url("../../img/background.jpg");
+  padding: 0 !important;
+  background-color: #EAEC23;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  height: 100vh;
+}
+div.container-fluid section.icons-left, div.container-fluid section.icons-center, div.container-fluid section.icons-right {
+  height: 92vh;
+}
+div.container-fluid section.bar {
+  opacity: 0.9;
+  background-color: #1A1A1A;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  color: #FFFFFF;
+  font-size: 2em;
+}
+div.container-fluid section.bar i {
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
