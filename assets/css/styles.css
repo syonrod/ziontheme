@@ -15,18 +15,38 @@ div.container-fluid {
 div.container-fluid section.icons-left, div.container-fluid section.icons-center, div.container-fluid section.icons-right {
   height: 92vh;
 }
+div.container-fluid section.icons-left {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
 div.container-fluid section.bar {
+  display: grid;
+  grid-template-columns: repeat(10, auto);
   opacity: 0.9;
   background-color: #1A1A1A;
   grid-column-start: 1;
   grid-column-end: 4;
   color: #FFFFFF;
   font-size: 2em;
+  align-items: center;
 }
-div.container-fluid section.bar i {
+div.container-fluid section.bar i.menu {
   cursor: pointer;
-  margin-top: 20px;
   margin-left: 10px;
+}
+div.container-fluid section.bar section.timeanddate {
+  font-weight: bold;
+  font-size: 0.5em;
+  grid-column: 14/span 1;
+}
+div.container-fluid section.bar section.timeanddate span.time {
+  border-right: 1px solid #FFFFFF;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+div.container-fluid section.bar section.timeanddate span.date {
+  padding-left: 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -5,13 +5,12 @@
 	<section class="icons-center">center</section>
 	<section class="icons-right">right</section>
 	<section class="bar">
-		<i class="fas fa-align-justify"></i>
+		<i id="menu" class="fas fa-align-justify menu"></i>
 		<section class="timeanddate">
-			<h6>EN</h6>
-			<i class="fas fa-keyboard"></i>
-			<h6></h6>
-
-
+			<span>EN <i class="fas fa-keyboard"></i></span>
+			<span class="time" id="time"></span>
+			<span class="date" id="date"></span>
+			
 		</section>
 	</section>
 </div>
