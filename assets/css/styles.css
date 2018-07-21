@@ -16,6 +16,112 @@ div.container-fluid section.icons-left, div.container-fluid section.icons-center
   height: 92vh;
 }
 div.container-fluid section.icons-left {
+  width: 450px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+div.container-fluid section.icons-left div.about-me-icon {
+  text-align: center;
+  padding: 0.5em;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+div.container-fluid section.icons-left div.about-me-icon i.fa-users {
+  font-size: 3em;
+  color: #71cf95;
+  text-shadow: 2px 1px 2px #000000;
+}
+div.container-fluid section.icons-left div.about-me-icon h6 {
+  color: #FFFFFF;
+  text-shadow: 2px 1px 3px #000000;
+  font-weight: 900;
+}
+div.container-fluid section.icons-left div.portfolio-icon {
+  text-align: center;
+  padding: 0.5em;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+div.container-fluid section.icons-left div.portfolio-icon i.fa-briefcase {
+  font-size: 3em;
+  color: #71cf95;
+  text-shadow: 2px 1px 2px #000000;
+}
+div.container-fluid section.icons-left div.portfolio-icon h6 {
+  color: #FFFFFF;
+  text-shadow: 2px 1px 3px #000000;
+  font-weight: 900;
+}
+div.container-fluid section.icons-left div.blog-icon {
+  text-align: center;
+  padding: 0.5em;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+div.container-fluid section.icons-left div.blog-icon i.fa-book {
+  font-size: 3em;
+  color: #71cf95;
+  text-shadow: 2px 1px 2px #000000;
+}
+div.container-fluid section.icons-left div.blog-icon h6 {
+  color: #FFFFFF;
+  text-shadow: 2px 1px 3px #000000;
+  font-weight: 900;
+}
+div.container-fluid section.icons-left div.contact-icon {
+  text-align: center;
+  padding: 0.5em;
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+div.container-fluid section.icons-left div.contact-icon i.fa-phone {
+  font-size: 3em;
+  color: #71cf95;
+  text-shadow: 2px 1px 2px #000000;
+}
+div.container-fluid section.icons-left div.contact-icon h6 {
+  color: #FFFFFF;
+  text-shadow: 2px 1px 3px #000000;
+  font-weight: 900;
+}
+div.container-fluid section.icons-left section.the-menu {
+  display: none;
+  border: 1px solid #1A1A1A;
+  border-radius: 5px;
+  background-color: rgba(26, 26, 26, 0.8);
+  grid-column: 1/last-line;
+  grid-row: 5/9;
+  padding: 0.5em;
+}
+div.container-fluid section.icons-left section.the-menu section.the-sub-items {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(7, 50px);
+  height: 100%;
+  width: 60%;
+  background-color: #e0e0e0;
+}
+div.container-fluid section.icons-left section.the-menu section.the-sub-items div.resume {
+  font-size: 1.5em;
+  line-height: 45px;
+}
+div.container-fluid section.icons-left section.the-menu section.the-sub-items div.resume i.fa-file {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.5em;
+}
+div.container-fluid section.icons-left section.the-menu section.the-sub-items div.resume h6 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+div.container-fluid section.icons-center {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+div.container-fluid section.icons-right {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(8, 1fr);

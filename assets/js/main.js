@@ -48,3 +48,12 @@ startTime();
 document.getElementById("date").innerHTML = currentDate();
 
 
+$("#menu").click(function(){
+  $(".the-menu").toggle();
+});
+
+// $(document).click(function(e) 
+// {
+//   if($(".the-menu").is(:visible))
+// });
+
