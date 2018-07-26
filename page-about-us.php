@@ -11,6 +11,7 @@
         	<section class="about-header">
         		<i class="fas fa-times"></i>
         	</section>
+        	<section class="about-content"></section>
         </section>
 
         <section class="menu">
@@ -29,7 +30,6 @@
                 <li><i class="fas fa-lightbulb"></i><h5>Business Cards</h5></li>
                 <li><i class="fas fa-pencil-alt"></i><h5>Photography</h5></li>
                 <li><i class="fas fa-lightbulb"></i><h5>PHP Apps</h5></li>
-            
             </ul>
             <input class="autocomplete" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for skills.." title="Type in a name">
         </section>
