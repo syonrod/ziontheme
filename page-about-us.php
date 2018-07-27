@@ -1,17 +1,23 @@
+<?php /* Template Name: About Us */ ?>
 <?php get_header(); ?>
 
 <div class="container-fluid">
+
     <div class="container-icons">
         
         <section class="left-icons">
             <?php if (function_exists(clean_custom_menus())) clean_custom_menus(); ?>
         </section>
 
-        <section class="about">
+        <section id="draggable" class="about">
         	<section class="about-header">
-        		<i class="fas fa-times"></i>
+        		<i id="close-about" class="fas fa-times"></i>
         	</section>
-        	<section class="about-content"></section>
+        	<section class="about-content">
+                <?php while ( have_posts() ) : the_post(); ?>
+                    <?php the_content();?>
+                <?php endwhile; ?>
+            </section>
         </section>
 
         <section class="menu">

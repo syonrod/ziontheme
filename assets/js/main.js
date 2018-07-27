@@ -1,4 +1,5 @@
 var menuContainer = document.querySelector(".menu");
+var closeAbout = document.querySelector("#close-about");
 var list = document.getElementById("list-icons");
 var menuNames = ["Home", "About Us", "Portfolio", "Blog", "Contact Us"];
 var itemsName = ["fa-home", "fa-users", "fa-briefcase", "fa-book", "fa-phone"];
@@ -13,6 +14,15 @@ var mm = today.getMinutes();
 var ss = today.getSeconds();
 
 
+$(closeAbout).click(function(){
+  $(".about").hide();
+})
+
+$( function() {
+  $( ".about-header" ).draggable();
+} );
+
+//Font Awesome Icons
 for(var i = 0; i < list.children.length; i++){
   list.children[i].classList.add("icon-" + i); //li
   list.children[i].firstChild.children[0].classList.add(itemsName[i]);
@@ -22,8 +32,6 @@ for(var i = 0; i < list.children.length; i++){
 $("#menu-icon").click(function(){
   $(menuContainer).toggle();
 });
-
-//Close Menu
 
 
 
@@ -90,25 +98,3 @@ function myFunction() {
 
 
 
-
-// function drag_start(event) {
-//   var style = window.getComputedStyle(event.target, null);
-//   event.dataTransfer.setData("text/plain",
-//   (parseInt(style.getPropertyValue("left"),10) - event.clientX) + ',' + (parseInt(style.getPropertyValue("top"),10) - event.clientY));
-// } 
-// function drag_over(event) { 
-//   event.preventDefault(); 
-//   return false; 
-// } 
-// function drop(event) { 
-//   var offset = event.dataTransfer.getData("text/plain").split(',');
-//   var dm = document.getElementById('icon');
-//   dm.style.left = (event.clientX + parseInt(offset[0],10)) + 'px';
-//   dm.style.top = (event.clientY + parseInt(offset[1],10)) + 'px';
-//   event.preventDefault();
-//   return false;
-// } 
-// var dm = document.getElementById('icon'); 
-// dm.addEventListener('dragstart',drag_start,false); 
-// document.body.addEventListener('dragover',drag_over,false); 
-// document.body.addEventListener('drop',drop,false); 

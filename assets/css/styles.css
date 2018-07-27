@@ -157,6 +157,12 @@ div.container-fluid div.container-icons section.right-widgets {
   grid-row: 1/3;
 }
 
+#draggable {
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+}
+
 /* MENUBAR STYLES */
 section.bottom-bar {
   display: grid;
@@ -207,6 +213,8 @@ section.about {
   border-radius: 5px;
   border: 5px solid #333333;
   opacity: 0.9;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 section.about section.about-header {
   display: flex;
@@ -220,6 +228,16 @@ section.about section.about-header i.fa-times {
   color: #F53A33;
   font-size: 1.5em;
   margin-right: 5px;
+}
+section.about section.about-content {
+  color: black;
+}
+section.about section.about-content p {
+  margin: 0;
+}
+section.about section.about-content p img {
+  width: 100%;
+  height: auto;
 }
 
 /* WIDGET STYLES */
