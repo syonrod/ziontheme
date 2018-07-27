@@ -157,12 +157,6 @@ div.container-fluid div.container-icons section.right-widgets {
   grid-row: 1/3;
 }
 
-#draggable {
-  width: 150px;
-  height: 150px;
-  padding: 0.5em;
-}
-
 /* MENUBAR STYLES */
 section.bottom-bar {
   display: grid;

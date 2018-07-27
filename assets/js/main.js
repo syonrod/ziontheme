@@ -18,9 +18,12 @@ $(closeAbout).click(function(){
   $(".about").hide();
 })
 
-$( function() {
-  $( ".about-header" ).draggable();
-} );
+
+
+$(".about").draggable({
+        handle: $(".about-header"),
+        containment: ".container-fluid"
+    });
 
 //Font Awesome Icons
 for(var i = 0; i < list.children.length; i++){
