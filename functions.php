@@ -4,15 +4,15 @@
 =============================================*/
 function portfolio_script_enqueue()
 {
-	//CSS
-	wp_enqueue_style( 'bootstrapstyle' , get_template_directory_uri() . '/assets/css/bootstrap.min.css' , array(), '3.3.4', 'all');
+	//CSS 
+	// wp_enqueue_style( 'bootstrapstyle' , get_template_directory_uri() . '/assets/css/bootstrap.min.css' , array(), '3.3.4', 'all');
 	wp_enqueue_style( 'materializestyle' , get_template_directory_uri() . '/assets/css/materialize.min.css' , array(), '1.0.0', 'all');
 	wp_enqueue_style( 'customstyle' , get_template_directory_uri() . '/assets/css/styles.css' , array(), '1.0.0', 'all');
 	//JS //code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css
 	wp_enqueue_script( 'customjquery' , get_template_directory_uri() . '/assets/js/jquery.js' , array(), '3.3.1', true);
 	wp_enqueue_script( 'customjqueryui' , 'https://code.jquery.com/ui/1.12.1/jquery-ui.js' , array(), '3.3.1', true);
 	wp_enqueue_script( 'materializejs' , get_template_directory_uri() . '/assets/js/materialize.min.js' , array(), '1.0.0', true);
-	wp_enqueue_script( 'bootstrapjs' , get_template_directory_uri() . '/assets/js/bootstrap.min.js' , array(), '3.3.4', true);
+	// wp_enqueue_script( 'bootstrapjs' , get_template_directory_uri() . '/assets/js/bootstrap.min.js' , array(), '3.3.4', true);
 	wp_enqueue_script( 'customjs' , get_template_directory_uri() . '/assets/js/main.js' , array(), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'portfolio_script_enqueue');

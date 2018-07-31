@@ -1,4 +1,3 @@
-<?php /* Template Name: window */ ?>
 <?php get_header(); ?>
 
 <div class="container-fluid">
@@ -13,10 +12,21 @@
             <section class="window-header">
                 <i id="close-window" class="fas fa-times"></i>
         	</section>
-            <section class="window-content">
-                <?php while ( have_posts() ) : the_post(); ?>
-                    <?php the_content();?>
-                <?php endwhile; ?>         
+            <section class="window-content">			
+								<?php
+								$args = array('order' => 'DESC','post_status' => 'publish' );
+									$myposts = new WP_Query($args);
+									if($myposts->have_posts()):
+										while($myposts->have_posts()): $myposts->the_post();
+								?>
+									<?php get_template_part('content', get_post_format()); ?>
+									
+
+								<?php  		
+										endwhile;
+									endif;
+								?>
+
             </section>
         </section>
 
@@ -59,3 +69,6 @@
 
 
 <?php get_footer(); ?>
+
+
+

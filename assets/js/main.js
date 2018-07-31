@@ -1,5 +1,4 @@
 var menuContainer = document.querySelector(".menu");
-var closeAbout = document.querySelector("#close-about");
 var list = document.getElementById("list-icons");
 var menuNames = ["Home", "About Us", "Portfolio", "Blog", "Contact Us"];
 var itemsName = ["fa-home", "fa-users", "fa-briefcase", "fa-book", "fa-phone"];
@@ -13,15 +12,29 @@ var hh = today.getHours();
 var mm = today.getMinutes();
 var ss = today.getSeconds();
 
+$( function() {
+  $( ".window" ).resizable({
+    containment: ".container-icons"
+    
+  });
+} );
 
-$(closeAbout).click(function(){
-  $(".about").hide();
-})
+$("#close-window").click(function(){
+  $(".window").hide(1000);
+  $("#fa-users-mini").show(500);
+  M.toast({html: 'You just closed the window, you can open it again by pressing the icon on the menu bar!', displayLength: 5000})
+  
+});
+
+$('#fa-users-mini').click(function() {
+  $('.window').show(1000);
+  $('#fa-users-mini').hide();
+  M.toast({html: 'Is open now!', displayLength: 3000, classes: "cyan darken-1"})
+});
 
 
-
-$(".about").draggable({
-        handle: $(".about-header"),
+$(".window").draggable({
+        handle: $(".window-header"),
         containment: ".container-fluid"
     });
 

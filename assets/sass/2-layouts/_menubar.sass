@@ -2,26 +2,42 @@
 
 section.bottom-bar
     display: grid
-    grid-template-columns: 80% 20%
+    grid-template-columns: repeat(10, 1fr)
     grid-template-rows: auto
     opacity: 0.9
     grid-column: 1 / 2
     grid-row: 2 / 3
     background-color: #333333
-    i
+    
+
+    i.fa-bars
         margin: 10px 0 0 15px
         font-size: 2em
         width: 30px
         height: 30px
-    i:hover
+    i.fa-bars:hover
         transition: 0.2s
         color: $myYellow
         transform: scale(1.2)
+    i.fa-users
+        margin: 10px 0 0 15px
+        font-size: 2em
+        width: 30px
+        height: 30px
+        display: none
+        grid-column: 2 / 3
+        grid-row: 1 / 2
+    i.fa-users:hover
+        color: $myGreen
+    
+    
+
+
     section.time-and-date
         display: grid
         grid-template-columns: repeat(3, auto)
         grid-template-rows: 50% 50%
-        grid-column: 2 / 3
+        grid-column: 10 / 11
         grid-row: 1 / 2
         h5#time, h5#date
             text-align: center
@@ -33,3 +49,11 @@ section.bottom-bar
         h5#date
             grid-column: 3 / 4
             grid-row: 2 / 3
+
+.toast
+        font-family: $roboto
+        font-size: 1em
+        padding: 2em !important
+.ui-resizable-helper
+    border: 2px dotted #00F
+        
